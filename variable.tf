@@ -5,6 +5,12 @@ variable "prod_instance_type" {
   description = "Production instance type"
 }
 
+variable "stage_instance_type" {
+  type        = string
+  default     = "t2.medium"
+  description = "Staging instance type"
+}
+
 variable "dev_instance_type" {
   type        = string
   default     = "t2.small"
